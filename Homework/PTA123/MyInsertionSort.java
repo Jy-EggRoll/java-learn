@@ -1,4 +1,4 @@
-package Homework;
+package Homework.PTA123;
 import java.util.Scanner;
 
 public class MyInsertionSort {

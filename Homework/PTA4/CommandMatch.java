@@ -1,4 +1,4 @@
-package Homework;
+package Homework.PTA4;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;

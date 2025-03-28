@@ -1,4 +1,4 @@
-package Homework;
+package Homework.PTA4;
 import java.util.Scanner;
 
 abstract class Employee {

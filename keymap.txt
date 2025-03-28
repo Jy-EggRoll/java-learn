@@ -1,0 +1,26 @@
+esc f1 f2 f3 f4
+f5 f6 f7 f8
+f9 f10 f11 f12
+` 1 2 3 4 5 6 7 8 9 0
+- = backspace
+tab q w e r t y u i o p
+[ ] \
+capslock a s d f g h j k l
+; '
+enter
+LShift z x c v b n m
+, . / RShift
+LCtrl LWin LAlt space RAlt AppsKey RCtrl
+singlePress
+PrintScreen ScrollLock Pause
+insert home pgup
+delete end pgdn
+up down left right
+NumpadHome NumpadUp NumpadPgUp
+NumpadLeft NumpadClear NumpadRight
+NumpadEnd NumpadDown NumpadPgDn
+NumpadIns NumpadDot NumpadEnter
+NumpadAdd NumpadSub NumpadMult NumpadDiv
+LButton RButton MButton
+XButton1 XButton2
+WheelUp WheelDown
