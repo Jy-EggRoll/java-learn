@@ -1,3 +1,4 @@
+package Homework.PTA4;
 import java.util.Scanner;
 
 class BankAccount {
@@ -30,7 +31,7 @@ class BankAccount {
     }
 }
 
-public class Main {
+public class MyAccount {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int initialBalance = scanner.nextInt();
