@@ -1,4 +1,4 @@
-package Homework.PTA123;
+package Homework.PTA123.Strange;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;

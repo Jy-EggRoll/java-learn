@@ -1,4 +1,4 @@
-package Homework.PTA123;
+package Homework.PTA123.Strange;
 import java.util.Scanner;
 
 class Student {
