@@ -1,3 +1,4 @@
+package Homework.PTA7;
 abstract class Shape {
 
     public abstract int area();
@@ -67,7 +68,7 @@ class Rectangle extends Shape implements Comparable<Shape> {
     }
 }
 
-public class Main {
+public class Color_and_Shape_Sort {
     public static void main(String[] args) {
         java.util.Scanner sc = new java.util.Scanner(System.in);
         int n = sc.nextInt();
