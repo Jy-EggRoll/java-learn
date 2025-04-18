@@ -1,0 +1,93 @@
+abstract class Shape {
+
+    public abstract int area();
+
+    public abstract void setColor(String color);
+}
+
+class Square extends Shape implements Comparable<Shape> {
+    private int sideLength;
+    private String color;
+
+    public Square(String color, int sideLength) {
+        this.sideLength = sideLength;
+        this.color = color;
+    }
+
+    @Override
+    public int area() {
+        return sideLength * sideLength;
+    }
+
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public int compareTo(Shape o) {
+        return this.area() - o.area();
+    }
+
+    @Override
+    public String toString() {
+        return color + " Square " + area();
+    }
+}
+
+class Rectangle extends Shape implements Comparable<Shape> {
+    private String color;
+    private int length;
+    private int width;
+
+    public Rectangle(String color, int length, int width) {
+        this.color = color;
+        this.length = length;
+        this.width = width;
+    }
+
+    @Override
+    public int area() {
+        return length * width;
+    }
+
+    @Override
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    @Override
+    public int compareTo(Shape o) {
+        return this.area() - o.area();
+    }
+
+    @Override
+    public String toString() {
+        return color + " Rectangle " + area();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        java.util.Scanner sc = new java.util.Scanner(System.in);
+        int n = sc.nextInt();
+        Shape[] shapes = new Shape[n];
+        for (int i = 0; i < n; i++) {
+            int type = sc.nextInt();
+            String color = sc.next();
+            if (type == 1) {
+                int side = sc.nextInt();
+                shapes[i] = new Square(color, side);
+            } else {
+                int length = sc.nextInt();
+                int width = sc.nextInt();
+                shapes[i] = new Rectangle(color, length, width);
+            }
+        }
+        java.util.Arrays.sort(shapes);
+        for (Shape shape : shapes) {
+            System.out.println(shape);
+        }
+        sc.close();
+    }
+}
